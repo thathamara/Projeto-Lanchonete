@@ -1,0 +1,292 @@
+#grid {
+  display: grid;
+  width: 100%;
+  height: 80vh;
+  grid-template-columns: 300px 2fr;
+}
+
+#section_1 {
+  width: 100%;
+  background-color: white;
+}
+
+#section_2 {
+  background-color: whitesmoke;
+}
+
+#page-novos {
+  display: fixed;
+}
+
+.logo {
+  padding: 10px;
+}
+
+.info-lateral {
+  padding-top: 370px;
+}
+
+.btn-new-products {
+  width: 158px;
+  height: 38px;
+  background-color: blue;
+  color: white;
+  border: 10px;
+  border-radius: 8px;
+  border-color: aliceblue;
+  gap: 16px;
+  padding: 12px 16px;
+}
+
+.btn-link {
+  color: aliceblue
+}
+
+
+.filter {
+  margin-left: 5px;
+}
+
+
+.btn-type,
+.btn-status {
+  width: 100px;
+  height: 25px;
+  border-radius: 4px;
+  border-color: aliceblue;
+  padding-right: 100px;
+}
+
+.btn-print {
+  margin-left: 600px;
+  width: 158px;
+  height: 38px;
+  border-radius: 4px;
+  border-color: #FF8B20;
+  color: #FF8B20;
+  border: 1px solid #FF8B20;
+  border-radius: 8px;
+}
+
+.dados {
+  margin-left: 5px;
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+  height: 30px;
+}
+
+
+.number-request {
+  width: 140px;
+  background: #B3B3B3;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.itens {
+  width: 400px;
+  margin-left: 5px;
+  background: #B3B3B3;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.type {
+  width: 150px;
+  margin-left: 5px;
+  background: #B3B3B3;
+  padding-left: 5px;
+  padding-top: 5px;
+
+}
+
+.value {
+  width: 150px;
+  margin-left: 5px;
+  background: #B3B3B3;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.status {
+  width: 150px;
+  margin-left: 5px;
+  background: #B3B3B3;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.roda-pe {
+  margin-left: 500px;
+  margin-top: 78px;
+}
+
+/* css novos pedidos */
+.new {
+  padding-left: 10px;
+  margin-top: -20px;
+  line-height: 10px;
+}
+
+.consumo {
+  display: flex;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+#salao-Input {
+  margin-left: 20px;
+}
+
+.new>div {
+  margin-bottom: 50px;
+}
+
+.delivery {
+  padding-left: 3px;
+  margin-top: -10px;
+}
+
+.salao {
+  padding-left: 20px;
+  margin-top: -10px;
+}
+
+.buscar {
+  margin-top: -20px;
+  margin-left: 10px;
+  line-height: 1px;
+  margin-bottom: 10px;
+}
+
+.codigo-produto {
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  padding-right: 10px;
+}
+
+.buscar2 {
+  width: 158px;
+  height: 38px;
+  border-radius: 4px;
+  border-color: #FF8B20;
+  color: #FF8B20;
+  border: 1px solid #FF8B20;
+  border-radius: git 8px;
+}
+
+
+
+.pedido {
+  display: flex;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.pedido-quantidade {
+  line-height: 1px;
+}
+
+.pedido-quantidade>input,
+.pedido-preço>input {
+  width: 200px;
+  height: 30px;
+  border-radius: 4px;
+}
+
+.pedido-produto {
+  margin-left: 10px;
+  line-height: 1px;
+}
+
+.pedido-produto>input {
+  width: 590px;
+  height: 30px;
+  border-radius: 4px;
+}
+
+.pedido-preço {
+  margin-left: 10px;
+  line-height: 1px;
+}
+
+.btn-adicionar {
+  padding-top: 15px;
+}
+
+.btn-adicionar>button {
+  width: 270px;
+  height: 30px;
+  border-radius: 5px;
+  border-color: #B3B3B3;
+  margin-left: 770px;
+  background-color: #B3B3B3;
+  color: antiquewhite;
+}
+
+.dados {
+  padding-top: 20px;
+}
+
+.cdg {
+  width: 100px;
+  margin-left: 5px;
+  background: #B3B3B3;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.pdt {
+  width: 600px;
+  margin-left: 5px;
+  background: #B3B3B3;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.qtd {
+  width: 150px;
+  margin-left: 5px;
+  background: #B3B3B3;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.vlr {
+  width: 150px;
+  margin-left: 5px;
+  background: #B3B3B3;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.div-salvar {
+  position: static;
+  margin-top: 200px;
+  margin-left: 800px;
+}
+
+#btn-cancelar {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border-color: #B3B3B3;
+  background-color: #ffffff;
+  color: #4A08FF;
+
+}
+
+#btn-cancelar:hover {
+  color: #4e4e4e;
+}
+
+#btn-salvar {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border-color: #B3B3B3;
+  background-color: #B3B3B3;
+  color: antiquewhite;
+}

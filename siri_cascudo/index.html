@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script src="assets/js/main.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="grid">
+      <div id="section_1">
+        <img src="assets/img/Marca.png" class="logo" />
+
+        <div class="info-lateral">
+          <p>Operador:Marilucia</p>
+          <p>Data-Hora: 12/08/20202 - 13:30</p>
+          <p>Versao:1.0</p>
+        </div>
+      </div>
+
+      <div id="section_2">
+        <div id="page-todos">
+          <h1>Todos os pedidos</h1>
+          <button onclick="trocaTela()" class="btn-new-products">
+            <img src="assets/img/adicionar.png" />
+            Novos Pedidos
+          </button>
+
+          <div class="filter">
+            <h3>Filtar por:</h3>
+            <input type="button" value="Tipo" class="btn-type" />
+            <input type="button" value="Status" class="btn-status" />
+            <button class="btn-print">
+              <img src="assets/img/imprimir.png" /> Imprimir
+            </button>
+          </div>
+
+          <div class="dados">
+            <table>
+              <tr>
+                <th class="number-request">N do pedido</th>
+                <th class="itens">Itens</th>
+                <th class="type">Tipo</th>
+                <th class="value">Valor</th>
+                <th class="status">Status</th>
+              </tr>
+              <tbody id="tbodyPedidos"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div hidden id="page-novos">
+          <div class="new">
+            <h1>Novo Pedido</h1>
+            <p>Tipo de consumo</p>
+            <div class="consumo">
+              <input
+                type="radio"
+                id="delivery-Input"
+                name="delivery_1"
+                class="custom-Input"
+                value="Delivery"
+              />
+              <label for="delivery-Input">Delivery</label>
+              <input
+                type="radio"
+                id="salao-Input"
+                name="delivery_1"
+                class="custom-Input"
+                value="Salão"
+              />
+              <label for="salao-Input">Salão</label>
+            </div>
+          </div>
+
+          <div class="buscar">
+            <p>Buscar o produto</p>
+            <input
+              type="text"
+              placeholder="Codigo do produto"
+              class="codigo-produto"
+              id="numeroProduto"
+            />
+            <input
+              type="button"
+              value="Buscar"
+              class="buscar2"
+              id="buscar2"
+              onclick="filtrarDadosPorNome()"
+            />
+          </div>
+
+          <div class="pedido">
+            <div class="pedido-quantidade">
+              <p>Quantidade</p>
+              <input type="number" placeholder="0" id="quantidade" />
+            </div>
+            <div class="pedido-produto">
+              <p>Produto</p>
+              <input type="text" placeholder="Nome do produto" id="produto" />
+            </div>
+            <div class="pedido-preço">
+              <p>Preço</p>
+              <input type="number" placeholder="R$00,00" id="preco" />
+            </div>
+          </div>
+
+          <div class="btn-adicionar">
+            <button onclick="adicionarProdutos()">Adicionar produto</button>
+          </div>
+
+          <div class="dados">
+            <table>
+              <tr>
+                <th class="cdg">Codigo</th>
+                <th class="pdt">Produto</th>
+                <th class="qtd">Quantidade</th>
+                <th class="vlr">Valor</th>
+              </tr>
+              <tbody id="tbody"></tbody>
+            </table>
+          </div>
+
+          <div class="div-salvar">
+            <button id="btn-cancelar" onclick="limparFormulario()">
+              Cancelar
+            </button>
+            <button id="btn-salvar" onclick="btnSalvarPedido()">
+              Salvar Pedido
+            </button>
+          </div>
+
+          <div>Total do Pedido: 
+            <label for="" id="r$">R$</label>
+            <input type="text" id="totalProduto"></div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <footer class="roda-pe">
+      Copyright@ 2022 Siri Cascudo-Todos os direitos reservados
+    </footer>
+  </body>
+</html>
